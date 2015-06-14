@@ -1,4 +1,4 @@
-var $ = require('jquery');
+global.$ = require('jquery');
 require('fullpage.js');
 
 $(function() {

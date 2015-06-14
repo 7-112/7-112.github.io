@@ -12798,10 +12798,12 @@ return jQuery;
 }));
 
 },{}],3:[function(require,module,exports){
-var $ = require('jquery');
+(function (global){
+global.$ = require('jquery');
 require('fullpage.js');
 
 $(function() {
   $('#fullpage').fullpage();
 });
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"fullpage.js":1,"jquery":2}]},{},[3]);
