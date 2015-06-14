@@ -1,0 +1,9 @@
+{
+  "name": "7112-ncepu",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "fullpage.js": "^2.6.6",
+    "jquery": "^1.11.3"
+  }
+}
