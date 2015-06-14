@@ -14,6 +14,9 @@ body {
   font-size: 60px;
   text-align: center;
 }
+.sec2 {
+  background-color: rgba(128, 0, 128, 0.3);
+}
 .sec2 img {
   margin-right: 20px;
 }
