@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "browserify": "^10.2.4",
     "fullpage.js": "^2.6.6",
+    "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^1.0.0-rc.1",
     "jquery": "^1.11.3"
   }
 }

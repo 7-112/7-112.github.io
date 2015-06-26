@@ -5,9 +5,71 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
 }
 .section img {
-  max-height: 500px;
+  max-height: 100%;
+}
+.section .intro-wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.section .intro-wrapper .intro-text {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.5;
+}
+.section .intro-wrapper.top-left {
+  top: 0;
+  left: 0;
+}
+.section .intro-wrapper.top-left .intro-text {
+  top: 200px;
+  left: 0;
+  width: 400px;
+  transform: rotateZ(-45deg);
+  transform-origin: bottom left;
+}
+.section .intro-wrapper.top-right {
+  top: 0;
+  right: 0;
+}
+.section .intro-wrapper.top-right .intro-text {
+  top: 200px;
+  right: 0;
+  width: 400px;
+  transform: rotateZ(45deg);
+  transform-origin: bottom right;
+}
+.section .intro-wrapper.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.section .intro-wrapper.bottom-left .intro-text {
+  bottom: 200px;
+  left: 0;
+  width: 400px;
+  transform: rotateZ(45deg);
+  transform-origin: top left;
+}
+.section .intro-wrapper.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+.section .intro-wrapper.bottom-right .intro-text {
+  bottom: 200px;
+  right: 0;
+  width: 400px;
+  transform: rotateZ(-45deg);
+  transform-origin: top right;
 }
 .sec1 {
   color: #000;

@@ -12805,5 +12805,6 @@ require('fullpage.js');
 $(function() {
   $('#fullpage').fullpage();
 });
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"fullpage.js":1,"jquery":2}]},{},[3]);

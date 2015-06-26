@@ -6,12 +6,88 @@ body{
 
 .section{
   text-align: center;
-  // color: #fff;
   background-repeat: no-repeat;
   background-position: center;
 
+
   img{
-    max-height: 500px;
+    max-height: 100%;
+  }
+
+  // 横向滚动
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+
+  @top: 200px;
+
+  .intro-wrapper{
+    overflow: hidden;
+    position: absolute;
+    width: @top * 1.5;
+    height: @top * 1.5;
+
+    .intro-text{
+      position: absolute;
+      padding: 10px;
+      text-align: center;
+      font-size: 2em;
+      color: #fff;
+      background-color: #000;
+      opacity: 0.5;
+    }
+
+    &.top-left{
+      top: 0;
+      left: 0;
+
+      .intro-text{
+        top: @top;
+        left: 0;
+        width: @top * 2;
+        transform: rotateZ(-45deg);
+        transform-origin: bottom left;
+      }
+    }
+
+    &.top-right{
+      top: 0;
+      right: 0;
+
+      .intro-text{
+        top: @top;
+        right: 0;
+        width: @top * 2;
+        transform: rotateZ(45deg);
+        transform-origin: bottom right;
+      }
+    }
+
+    &.bottom-left{
+      bottom: 0;
+      left: 0;
+
+      .intro-text{
+        bottom: @top;
+        left: 0;
+        width: @top * 2;
+        transform: rotateZ(45deg);
+        transform-origin: top left;
+      }
+    }
+
+    &.bottom-right{
+      bottom: 0;
+      right: 0;
+
+      .intro-text{
+        bottom: @top;
+        right: 0;
+        width: @top * 2;
+        transform: rotateZ(-45deg);
+        transform-origin: top right;
+      }
+    }
   }
 }
 
